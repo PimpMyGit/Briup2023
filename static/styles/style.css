@@ -1,0 +1,100 @@
+html,
+body {
+  height: 100%;
+
+  /* background-image: linear-gradient(to right top, 
+    #d16ba580, #c777b980, #ba83ca80, #aa8fd880,
+    #9a9ae180, #b09be680, #c69cea80, #dd9cea80,
+    #ff91c880, #ff959180, #ffb15580, #f6d72380); */
+    background-image: linear-gradient(to right top, 
+    #d16ba580, #c777b980, #ba83ca80, #aa8fd880  ,
+    #9a9ae180, #8aa7ec80, #79b3f480, #69bff880  ,
+    #52cffe80, #41dfff80, #46eefa80, #5ffbf180  ),
+    url('../imgs/36_0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display');
+p.title{
+    margin-bottom: 2.5%;
+
+    font-family: "Gilda Display", serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 96px;
+    letter-spacing: 7px;
+    word-spacing: 12px;
+    line-height: 100px;
+    color: rgb(246, 203, 241);
+    background-color: rgba(84, 84, 84, 0);
+}
+
+p.subtitle{
+    margin: 0px;
+
+    font-family: "Gilda Display", serif;
+    text-transform: lowercase;
+    font-style: italic;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 5px;
+    word-spacing: 12px;
+    color: rgb(246, 203, 241);
+    background-color: rgba(84, 84, 84, 0.0);
+}
+@media screen and (max-width: 460px) {
+    p.subtitle{
+        margin: 0px;
+    
+        font-family: "Gilda Display", serif;
+        text-transform: lowercase;
+        font-style: italic;
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 3px;
+        word-spacing: 12px;
+        color: rgb(246, 203, 241);
+        background-color: rgba(84, 84, 84, 0.0);
+    }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: rgb(246, 203, 241);
+  margin-top: 10px;
+  margin: 4% 15px 0px 10px;
+}
+
+.blink {
+    -webkit-animation: blink 6s infinite both;
+            animation: blink 6s infinite both;
+}
+
+@-webkit-keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
