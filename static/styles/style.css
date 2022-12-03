@@ -16,10 +16,12 @@ body {
     background-position: center;
 }
 
+div.title-container {
+  margin-bottom: 2.5%;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Gilda+Display');
 p.title{
-    margin-bottom: 2.5%;
-
     font-family: "Gilda Display", serif;
     text-transform: uppercase;
     text-align: center;
@@ -46,26 +48,14 @@ p.subtitle{
 }
 @media screen and (max-width: 460px) {
     p.subtitle{
-        margin: 0px;
-    
-        font-family: "Gilda Display", serif;
-        text-transform: lowercase;
-        font-style: italic;
-        text-align: center;
         font-size: 25px;
         letter-spacing: 3px;
-        word-spacing: 12px;
-        color: rgb(246, 203, 241);
-        background-color: rgba(84, 84, 84, 0.0);
+        word-spacing: 0px;
     }
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
   color: rgb(246, 203, 241);
   margin-top: 10px;
   margin: 4% 15px 0px 10px;
@@ -77,24 +67,18 @@ p.subtitle{
 }
 
 @-webkit-keyframes blink {
-  0%,
-  50%,
-  100% {
+  0%, 50%, 100% {
     opacity: 1;
   }
-  25%,
-  75% {
+  25%, 75% {
     opacity: 0;
   }
 }
 @keyframes blink {
-  0%,
-  50%,
-  100% {
+  0%, 50%, 100% {
     opacity: 1;
   }
-  25%,
-  75% {
+  25%, 75% {
     opacity: 0;
   }
 }
