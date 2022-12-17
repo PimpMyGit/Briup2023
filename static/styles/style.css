@@ -16,12 +16,11 @@ body {
     background-position: center;
 }
 
-div.title-container {
-  margin-bottom: 2.5%;
-}
+div.main-container {}
 
 @import url('https://fonts.googleapis.com/css?family=Gilda+Display');
 p.title{
+    margin-bottom: 2%;
     font-family: "Gilda Display", serif;
     text-transform: uppercase;
     text-align: center;
@@ -31,6 +30,46 @@ p.title{
     line-height: 100px;
     color: rgb(246, 203, 241);
     background-color: rgba(84, 84, 84, 0);
+}
+@media screen and (max-width: 460px) {
+  p.title{
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: 3px;
+      word-spacing: 5px;
+  }
+}
+
+div.dove-quando-container {
+  font-family: "Gilda Display", serif;
+  text-align: center;
+  color: rgb(246, 203, 241);
+  background-color: rgba(84, 84, 84, 0);
+  margin: 0 !important;
+  padding: 0 !important;
+}
+div.dove-quando-container > p.quando {
+  font-size: 64px;
+  line-height: 64px;
+}
+div.dove-quando-container > p.dove {
+  font-size: 32px;
+  line-height: 32px;
+}
+@media screen and (max-width: 460px) {
+  div.dove-quando-container > p.quando {
+    font-size: 48px;
+    line-height: 38px;
+  }
+  div.dove-quando-container > p.dove {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+#map {
+  margin: 2% 0 3% 0;
+  height: 50%;
+  width: auto;
 }
 
 p.subtitle{
