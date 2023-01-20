@@ -1,24 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display:wght@800&family=Poller+One&family=Poppins:ital,wght@0,800;1,100&display=swap');
 html,
 body {
-  height: 100%;
-
-  /* background-image: linear-gradient(to right top, 
-    #d16ba580, #c777b980, #ba83ca80, #aa8fd880,
-    #9a9ae180, #b09be680, #c69cea80, #dd9cea80,
-    #ff91c880, #ff959180, #ffb15580, #f6d72380); */
-    background-image: linear-gradient(to right top, 
-    #d16ba580, #c777b980, #ba83ca80, #aa8fd880  ,
-    #9a9ae180, #8aa7ec80, #79b3f480, #69bff880  ,
-    #52cffe80, #41dfff80, #46eefa80, #5ffbf180  ),
-    url('../imgs/36_0.jpg');
+  height: 100vh;
+  background-image: url('../imgs/backgrounds/BG__16_9.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 460px) {
+  body {
+    height: 100vh;
+    background-image: url('../imgs/backgrounds/BG__9_16.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
 }
 
-div.main-container {}
+#logoContainer {
+  width: 100%;
+  margin: 0 0 0 0;
+}
+#mainLogo {
+  height: 275px;
+  width: auto;
+}
+#workInProgress {
+  color: white;
+  font-size: 72px;
+  font-family: 'Poppins';
+  margin: 1% 0 0 0;
+}
+div.icons-container {
+  margin: 0 0.5% 4% 0;
+}
+div.icon {
+  margin: 0 0 0 4.5%;
+  cursor: pointer;
+  /* transition: letter-spacing 0.2s ease-in; */
+}
+/* div.icon:hover {
+  letter-spacing: 0.1em;
+ } */
+p.icon-text {
+  color: white;
+  font-family: 'Poppins';
+  margin-right: 10px;
+}
+.fa {
+  color: white;
+  font-size: 20px;
+}
+.fa-instagram {
+  color: white;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Gilda+Display');
+
+
+
+
+
+
+
+
+
+
+
+/* 
+------------- OLD VERSION BY TOMMASO -------------
+
 p.title{
     margin-bottom: 2%;
     font-family: "Gilda Display", serif;
@@ -120,4 +171,4 @@ p.subtitle{
   25%, 75% {
     opacity: 0;
   }
-}
+} */
