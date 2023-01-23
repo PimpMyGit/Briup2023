@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Gilda+Display');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display:wght@800&family=Poller+One&family=Poppins:ital,wght@0,800;1,100&display=swap');
-html,
-body {
+
+html {
   height: 100vh;
-  background-image: url('../imgs/backgrounds/BG__16_9.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
-@media screen and (max-width: 460px) {
+@media screen and (min-width: 600px) {
   body {
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/backgrounds/BG__16_9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    height: 100%;
     background-image: url('../imgs/backgrounds/BG__9_16.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,28 +25,89 @@ body {
   }
 }
 
-#logoContainer {
+#logoContainer_desktop,
+#logoContainer_mobile {
   width: 100%;
   margin: 0 0 0 0;
 }
-#mainLogo {
+#mainLogo_desktop {
   height: 275px;
   width: auto;
 }
-#workInProgress {
-  color: white;
-  font-size: 72px;
-  font-family: 'Poppins';
-  margin: 1% 0 0 0;
+#mainLogo_mobile {
+  height: 70%;
+  width: auto;
+  /* margin-top: -15%;  */
 }
-div.icons-container {
-  margin: 0 0.5% 4% 0;
+@media screen and (min-width: 600px) {
+  #logoContainer_mobile,
+  #logoContainer_mobile * {
+    display: none;
+  }
 }
-div.icon {
-  margin: 0 0 0 4.5%;
-  cursor: pointer;
-  /* transition: letter-spacing 0.2s ease-in; */
+@media screen and (max-width: 600px) {
+  #logoContainer_desktop,
+  #logoContainer_desktop * {
+    display: none;
+  }
 }
+
+@media screen and (min-width: 600px) {
+  #workInProgress_desktop {
+    color: white;
+    font-size: 72px;
+    font-family: 'Poppins';
+    margin: 1% 0 0 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #workInProgress_mobile {
+    color: white;
+    font-size: 36px;
+    font-family: 'Poppins';
+    margin: -10% 0 0 0;
+    text-align: center;
+  }
+}
+
+#icons-container-desktop {
+  margin: 0 0.5% 12% 0;
+}
+#icons-container-mobile {
+  margin: -7.5% 0 0 0%;
+}
+@media screen and (min-width: 600px) {
+  #icons-container-mobile,
+  #icons-container-mobile * {
+    display: none;
+  }
+
+  div.icon {
+    margin: 0 0 0 4.5%;
+    cursor: pointer;
+    /* transition: letter-spacing 0.2s ease-in; */
+  }
+}
+@media screen and (max-width: 600px) {
+  #icons-container-desktop,
+  #icons-container-desktop * {
+    display: none;
+  }
+
+  p.icon-text {
+    color: white;
+    font-family: 'Poppins';
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .fa {
+    color: white;
+    font-size: 28px;
+    margin-top: 5px;
+  }
+}
+
+
 /* div.icon:hover {
   letter-spacing: 0.1em;
  } */
@@ -51,9 +119,6 @@ p.icon-text {
 .fa {
   color: white;
   font-size: 20px;
-}
-.fa-instagram {
-  color: white;
 }
 
 
